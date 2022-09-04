@@ -76,6 +76,7 @@ function getValue(e){
                 compute();
             });
         }
+        alert(e.keyCode);
 
     } else if (this.id === "person") {
         if((this.value === "0" && (e.keyCode >= 48 && e.keyCode <= 57)) || e.keyCode === 69 || e.keyCode === 187 || e.keyCode === 189 || e.keyCode === 190){
