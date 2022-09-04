@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Frontend Mentor | Tip Calculator App</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.svg" alt="splitter logo">
+        </header>
+        <main class="container p-3 pt-0 rounded-4 mb-5">
+            <form action="#">
+                <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3">
+                    <div class="col">
+                        <div class="entry p-3 rounded-4">
+                            <div class="mb-4 position-relative">
+                                <label for="bill">Bill</label>
+                                <label class="position-absolute top-0 end-0 mt-1 warning hide" for="">Can't be zero</label>
+                                <div class="position-relative">
+                                    <img class="position-absolute top-50 start-0 ps-3 translate-middle-y" src="images/icon-dollar.svg" alt="dollar icon">
+                                    <input class="text-end pt-1 pb-1 pe-3 ps-4 rounded-1 user-input" type="text" id="bill" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="">Select Tip %</label>
+                                <div class="container p-0">
+                                    <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-2">
+                                        <div class="col">
+                                            <input class="tip-percent rounded-1 pt-1 pb-1" type="button" value="5%">
+                                        </div>
+                                        <div class="col">
+                                            <input class="tip-percent rounded-1 pt-1 pb-1" type="button" value="10%">
+                                        </div>
+                                        <div class="col">
+                                            <input class="tip-percent rounded-1 pt-1 pb-1" type="button" value="15%">
+                                        </div>
+                                        <div class="col">
+                                            <input class="tip-percent rounded-1 pt-1 pb-1" type="button" value="25%">
+                                        </div>
+                                        <div class="col">
+                                            <input class="tip-percent rounded-1 pt-1 pb-1" type="button" value="50%">
+                                        </div>
+                                        <div class="col">
+                                            <input class="tip-percent text-center col rounded-1 pt-1 pb-1 pe-3 ps-3 rounded-1" type="number" placeholder="Custom">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                            <div class="position-relative">
+                                <label for="person">Number of People</label>
+                                <label class="position-absolute top-0 end-0 mt-1 warning hide" for="">Can't be zero</label>
+                                <div class="position-relative">
+                                    <img class="position-absolute top-50 start-0 ps-3 translate-middle-y" src="images/icon-person.svg" alt="person icon">
+                                    <input class="text-end pt-1 pb-1 pe-3 ps-4 rounded-1 user-input" type="number" id="person" placeholder="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="preview rounded-4">
+                            <div>
+                                <div class="per-person">
+                                    <p class="amount-label">Tip Amount</p>
+                                    <p class="sub-label">/ person</p>
+                                </div>
+                                <p class="per-person amount" id="tip">$0.00</p>
+                            </div>
+                            <div>
+                                <div class="per-person">
+                                    <p class="amount-label">Total</p>
+                                    <p class="sub-label">/ person</p>
+                                </div>
+                                <p class="per-person amount" id="total">$0.00</p>
+                            </div>
+                            <input type="button" id="reset" class="pt-1 pb-1 rounded-1" value="RESET">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer class="text-center">
+            <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+            <p>Coded by <a href="https://www.linkedin.com/in/jerome-ogsonar/" target="_blank">Jerome Ogsonar</a>.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
